@@ -1,3 +1,4 @@
+import 'package:example_sushi/components/button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -12,6 +13,7 @@ class IntroPage extends StatelessWidget {
         padding: const EdgeInsets.all(25),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             const SizedBox(height: 25),
             // shop name
@@ -27,8 +29,8 @@ class IntroPage extends StatelessWidget {
 
             // icon
             Padding(
-              padding: const EdgeInsets.all(150.0),
-              child: Image.asset('lib/images/sushi_1.png'),
+              padding: const EdgeInsets.all(50.0),
+              child: Image.asset('lib/images/sushi_2.png'),
             ),
 
             // title
@@ -52,6 +54,7 @@ class IntroPage extends StatelessWidget {
             const SizedBox(height: 25),
 
             // get start button
+            const MyButton(text: 'Get Started')
           ],
         ),
       ),
